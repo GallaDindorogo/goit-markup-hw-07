@@ -227,7 +227,7 @@ body {
 .subscribe__form.form-input::placeholder {
 	color: rgba(255, 255, 255, 0.6);
 }
-.subscribe__form.subscribe.btn {
+.subscribe__form .subscribe.btn {
 	display: flex;
 	align-items: center;
 	justify-content: center;

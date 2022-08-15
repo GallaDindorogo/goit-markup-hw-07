@@ -60,11 +60,8 @@
 	&.form-input::placeholder {
 		color: rgba(255, 255, 255, 0.6);
 	}
-	&.subscribe.btn {
+	& .subscribe.btn {
 		@include flex();
-		// display: flex;
-		// align-items: center;
-		// justify-content: center;
 		padding: 10px 29px;
 		gap: 10px;
 	}

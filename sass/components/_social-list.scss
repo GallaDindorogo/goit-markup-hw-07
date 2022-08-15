@@ -16,9 +16,6 @@
 
 	&__list {
 		display: flex;
-		// flex-wrap: wrap;
-		// align-items: center;
-		// justify-content: center;
 		@include flex();
 		gap: 10px;
 	}
@@ -29,9 +26,6 @@
 		border-radius: 50%;
 		flex-wrap: wrap;
 		@include flex();
-		// display: flex;
-		// align-content: center;
-		// justify-content: center;
 		fill: var(--third-text-color);
 		transition: background-color var(--transithion-duration-function);
 		&:hover,

@@ -12,6 +12,17 @@
 	background-position: center;
 	background-size: cover;
 
+	&__title {
+		margin-left: auto;
+		margin-right: auto;
+		width: 696px;
+		font-weight: 900;
+		font-size: 44px;
+		line-height: 1.36;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--third-text-color);
+	}
 	&.btn {
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -32,16 +43,4 @@
 			border-radius: 4px;
 		}
 	}
-}
-
-.hero__title {
-	margin-left: auto;
-	margin-right: auto;
-	width: 696px;
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.36;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-	color: var(--third-text-color);
 }

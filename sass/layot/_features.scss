@@ -3,6 +3,22 @@
 	flex-wrap: wrap;
 	gap: 30px;
 
+	&__item {
+		flex-basis: calc((100% - 90px) / 4);
+	}
+
+	&__link {
+		@include flex();
+		// display: flex;
+		// align-content: center;
+		// justify-content: center;
+		flex-wrap: wrap;
+		height: 120px;
+		background: var(--third-backgraund-color);
+		border-radius: 4px;
+		margin-bottom: 30px;
+	}
+
 	&.title {
 		margin-bottom: 10px;
 		font-size: 14px;
@@ -21,19 +37,4 @@
 		width: 70px;
 		height: 70px;
 	}
-}
-
-.features__item {
-	flex-basis: calc((100% - 90px) / 4);
-}
-
-.features__link {
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	height: 120px;
-	background: var(--third-backgraund-color);
-	border-radius: 4px;
-	margin-bottom: 30px;
 }

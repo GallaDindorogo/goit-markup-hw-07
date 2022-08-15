@@ -52,21 +52,22 @@
 	}
 }
 
-.subscribe__form .form-input:focus {
-	outline: none;
-	border: 1px solid var(--accent-color);
-}
-
-.subscribe__form .form-input::placeholder {
-	color: rgba(255, 255, 255, 0.6);
-}
-
-.subscribe__form .subscribe.btn {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 10px 29px;
-	gap: 10px;
+.subscribe__form {
+	&.form-input:focus {
+		outline: none;
+		border: 1px solid var(--accent-color);
+	}
+	&.form-input::placeholder {
+		color: rgba(255, 255, 255, 0.6);
+	}
+	&.subscribe.btn {
+		@include flex();
+		// display: flex;
+		// align-items: center;
+		// justify-content: center;
+		padding: 10px 29px;
+		gap: 10px;
+	}
 }
 
 .link-svg {

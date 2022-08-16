@@ -1,6 +1,5 @@
 .hero {
-	margin-left: auto;
-	margin-right: auto;
+	@extend %centrmargin;
 	padding-top: 200px;
 	padding-bottom: 200px;
 	text-align: center;
@@ -13,8 +12,7 @@
 	background-size: cover;
 
 	&__title {
-		margin-left: auto;
-		margin-right: auto;
+		@extend %centrmargin;
 		width: 696px;
 		font-weight: 900;
 		font-size: 44px;

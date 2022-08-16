@@ -34,18 +34,10 @@
 }
 
 .subscribe .btn {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 62px;
-	padding-left: 28px;
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.06em;
-	background: var(--accent-color);
-	color: var(--third-text-color);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-	transition: background-color var(--transithion-duration-function);
+	@include btn($pt: 10px, $pb: 10px, $pr: 62px, $pl: 28px);
 
 	&:active {
 		background-color: #188ce8;
@@ -61,7 +53,7 @@
 		color: rgba(255, 255, 255, 0.6);
 	}
 	& .subscribe.btn {
-		@include flex();
+		@extend %flex;
 		padding: 10px 29px;
 		gap: 10px;
 	}

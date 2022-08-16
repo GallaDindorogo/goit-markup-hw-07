@@ -1,7 +1,5 @@
 .portfolio-filtr {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	@extend %flex;
 	margin-bottom: 50px;
 	outline: #757575;
 	&__item:not(:last-child) {
@@ -10,7 +8,6 @@
 }
 
 .portfolio.btn {
-	padding: 6px 22px;
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 500;
@@ -18,10 +15,15 @@
 	line-height: 1.62;
 	text-align: center;
 	letter-spacing: 0.03em;
-	background: var(--third-backgraund-color);
-	border-radius: 4px;
 	transition: background var(--transithion-duration-function), color var(--transithion-duration-function),
 		box-shadow var(--transithion-duration-function);
+
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-right: 22px;
+	padding-left: 22px;
+	background: var(--third-backgraund-color);
+	border-radius: 4px;
 
 	&.current {
 		color: var(--third-text-color);

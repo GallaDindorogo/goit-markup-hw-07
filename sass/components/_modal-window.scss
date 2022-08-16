@@ -11,7 +11,7 @@
 	position: absolute;
 	top: 8px;
 	right: 8px;
-	@include flex();
+	@extend %flex;
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;

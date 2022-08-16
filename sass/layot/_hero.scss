@@ -24,19 +24,13 @@
 		color: var(--third-text-color);
 	}
 	&.btn {
-		padding-top: 10px;
-		padding-bottom: 10px;
-		padding-right: 32px;
-		padding-left: 32px;
 		margin-top: 30px;
 		font-size: 16px;
 		line-height: 1.88;
 		letter-spacing: 0.06em;
-		background: var(--accent-color);
-		color: var(--third-text-color);
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-		border-radius: 4px;
-		transition: background-color var(--transithion-duration-function);
+
+		@include btn($pt: 10px, $pb: 10px, $pr: 32px, $pl: 32px);
+
 		&:active {
 			background-color: #188ce8;
 			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

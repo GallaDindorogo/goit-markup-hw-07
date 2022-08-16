@@ -15,8 +15,7 @@
 	}
 
 	&__list {
-		display: flex;
-		@include flex();
+		@extend %flex;
 		gap: 10px;
 	}
 
@@ -25,7 +24,7 @@
 		height: 44px;
 		border-radius: 50%;
 		flex-wrap: wrap;
-		@include flex();
+		@extend %flex;
 		fill: var(--third-text-color);
 		transition: background-color var(--transithion-duration-function);
 		&:hover,

@@ -4,7 +4,7 @@
 	justify-content: center;
 
 	&__link {
-		@include flex();
+		@extend %flex;
 
 		width: 170px;
 		height: 92px;

@@ -36,12 +36,11 @@
 	}
 
 	&__social-link {
-		display: flex;
+		@extend %flex;
 		width: 44px;
 		height: 44px;
 		border-radius: 50%;
-		justify-content: center;
-		align-items: center;
+
 		fill: var(--fours-text-color);
 		transition: fill var(--transithion-duration-function), background-color var(--transithion-duration-function);
 

@@ -77,7 +77,7 @@
 }
 
 .modal-form-chek-desc {
-	@include flex();
+	@extend %flex;
 	margin-bottom: 30px;
 	font-style: normal;
 	font-weight: 400;
@@ -116,18 +116,10 @@
 
 .modal-form-submit {
 	align-self: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 52px;
-	padding-left: 52px;
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.06em;
-	background: var(--accent-color);
-	color: var(--third-text-color);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-	transition: background-color var(--transithion-duration-function);
+	@include btn($pt: 10px, $pb: 10px, $pr: 52px, $pl: 52px);
 	&:active {
 		background-color: #188ce8;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
